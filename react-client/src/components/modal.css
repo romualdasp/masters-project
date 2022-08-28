@@ -1,0 +1,41 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  /* max-width: 380px; */
+  max-width: 680px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-body {
+  padding: 16px;
+  min-width: 100px;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #555;
+  cursor: pointer;
+  transition: all .15s;
+  padding: 8px;
+}
+
+.modal-close-button:hover {
+  color: #888;
+}

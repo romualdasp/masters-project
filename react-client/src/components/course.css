@@ -1,0 +1,27 @@
+.course-contents > div {
+  margin: 16px 0;
+  padding: 16px;
+  background-color: #fff;
+  border: #ddd solid 1px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.course-contents p {
+  margin: 0;
+}
+
+.course-contents video {
+  display: block;
+  margin: auto;
+}
+
+.course-contents button {
+  display: block;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.course-contents a {
+  text-decoration: none;
+  
+}

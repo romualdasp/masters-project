@@ -1,0 +1,27 @@
+.spinner {
+  height: 100vh;  
+  position: relative;
+}
+
+.spinner::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: solid 5px #c4ccce;
+  border-top-color: #00a2ff;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  animation: 1.2s linear infinite spinning;
+}
+
+@keyframes spinning {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}

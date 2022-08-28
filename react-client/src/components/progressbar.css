@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.pie-size {
+  font-size: 8em;
+}
+
+.pie-wrapper {
+  height: 1em;
+  width: 1em;
+  margin: 15px;
+  position: relative;
+}
+
+.pie-wrapper .pie {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pie-wrapper .pie.full-circle {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie-wrapper .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #00a2ff;
+  border-radius: 50%;
+  clip: rect(0, 0.5em, 1em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pie-wrapper .pie .left-side {
+  transform: rotate(0deg);
+}
+
+.pie-wrapper .pie .right-side {
+  transform: rotate(0deg);
+}
+
+.pie-wrapper .pie-label {
+  background: none;
+  color: #00a2ff;
+  border-radius: 50%;
+  bottom: 0.4em;
+  cursor: default;
+  display: block;
+  font-size: 0.25em;
+  left: 0.4em;
+  line-height: 2.8em;
+  font-weight: bold;
+  position: absolute;
+  right: 0.4em;
+  text-align: center;
+  top: 0.4em;
+}
+
+.pie-wrapper .pie-label .pie-smaller {
+  color: #999fa3;
+  font-size: 0.45em;
+  padding-bottom: 20px;
+  vertical-align: super;
+}
+.pie-wrapper .pie-shadow {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #bdc3c7;
+  border-radius: 50%;
+}
+
+.bar {
+  background-color: #bdc3c7;
+  border-radius: 0px;
+  width: 100px;
+  /* margin: 0 16px; */
+  margin-right: 8px;
+}
+
+.bar > div {
+  background-color: #00a2ff;
+  height: 10px;
+  border-radius: 0px;
+}
+
+.bar-red {
+  background-color: #bdc3c7;
+  border-radius: 0px;
+  width: 100px;
+  /* margin: 0 16px; */
+  margin-right: 8px;
+}
+
+.bar-red > div {
+  background-color: #fa5656;
+  height: 10px;
+  border-radius: 0px;
+}

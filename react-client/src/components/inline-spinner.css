@@ -1,0 +1,31 @@
+.inline-spinner {
+  position: relative;
+  display: inline-block;
+}
+
+.inline-spinner::after {
+  position: absolute;
+  left: 20px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: solid 4px #c4ccce;
+  border-top-color: #00a2ff;
+  border-radius: 50%;
+  animation: 1.2s linear infinite inlinespinning;
+}
+
+.inline-checkmark {
+  font-size: 26px;
+  color:#26d66f;
+  padding-left: 8px;
+}
+
+@keyframes inlinespinning {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
